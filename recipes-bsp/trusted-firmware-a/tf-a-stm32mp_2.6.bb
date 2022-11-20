@@ -46,12 +46,15 @@ include ${@oe.utils.ifelse(d.getVar('ST_ARCHIVER_ENABLE') == '1', 'tf-a-stm32mp-
 # ---------------------------------
 BBCLASSEXTEND = "devupstream:target"
 
-SRC_URI:class-devupstream = "git://github.com/STMicroelectronics/arm-trusted-firmware.git;protocol=https;branch=${ARCHIVER_ST_BRANCH}"
-SRCREV:class-devupstream = "c6da17964e4260944af2a703171a3c36b9e3edf8"
+#SRC_URI:class-devupstream = "git://github.com/STMicroelectronics/arm-trusted-firmware.git;protocol=https;branch=${ARCHIVER_ST_BRANCH}"
+#SRCREV:class-devupstream = "c6da17964e4260944af2a703171a3c36b9e3edf8"
+SRC_URI:class-devupstream = "git://github.com/OneKiwiTech/arm-trusted-firmware-stm32mp.git;protocol=https;branch=${ARCHIVER_ST_BRANCH}"
+SRCREV:class-devupstream = "c9cad45257b92f03e08ba3da5a2ce29629f80e4e"
 
 # ---------------------------------
 # Configure default preference to manage dynamic selection between tarball and github
 # ---------------------------------
 STM32MP_SOURCE_SELECTION ?= "tarball"
 
+#DEFAULT_PREFERENCE = "${@bb.utils.contains('STM32MP_SOURCE_SELECTION', 'github', '-1', '1', d)}"
 DEFAULT_PREFERENCE = "${@bb.utils.contains('STM32MP_SOURCE_SELECTION', 'github', '-1', '1', d)}"
