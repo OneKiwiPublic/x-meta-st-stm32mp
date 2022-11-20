@@ -51,7 +51,7 @@ BBCLASSEXTEND = "devupstream:target"
 #SRC_URI:class-devupstream = "git://github.com/STMicroelectronics/optee_os.git;protocol=https;branch=${ARCHIVER_ST_BRANCH}"
 #SRCREV:class-devupstream = "4bbca1689f6854f660a80327a0d2959537bea222"
 SRC_URI:class-devupstream = "git://github.com//OneKiwiTech/optee_os-stm32mp.git;protocol=https;branch=${ARCHIVER_ST_BRANCH}"
-SRCREV:class-devupstream = "e41ed80c9715e8948b712fcf6004b5831f6666db"
+SRCREV:class-devupstream = "ab1ebe02ca28e48e022e3e78371d130aba86bcb2"
 
 # ---------------------------------
 # Configure default preference to manage dynamic selection between tarball and github
