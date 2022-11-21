@@ -72,6 +72,8 @@ UBOOT_EXTLINUX_TARGETS_EXTRA_CONFIG:target-nand += "${STM32MP_DT_FILES_ED}"
 UBOOT_EXTLINUX_TARGETS_EXTRA_CONFIG:target-nand += "${STM32MP_DT_FILES_EV}"
 UBOOT_EXTLINUX_TARGETS_EXTRA_CONFIG:target-nor += "${STM32MP_DT_FILES_ED}"
 UBOOT_EXTLINUX_TARGETS_EXTRA_CONFIG:target-nor += "${STM32MP_DT_FILES_EV}"
+UBOOT_EXTLINUX_TARGETS_EXTRA_CONFIG:target-sdcard += "${STM32MP_DT_FILES_MP15XXAA}"
+UBOOT_EXTLINUX_TARGETS_EXTRA_CONFIG:target-emmc += "${STM32MP_DT_FILES_MP15XXAA}"
 # Define extra label configuration
 UBOOT_EXTLINUX_TARGETS_EXTRA_CONFIG[stm32mp157c-dk2] += "stm32mp157c-dk2-a7-examples"
 UBOOT_EXTLINUX_TARGETS_EXTRA_CONFIG[stm32mp157f-dk2] += "stm32mp157f-dk2-a7-examples"
@@ -84,6 +86,7 @@ UBOOT_EXTLINUX_TARGETS_EXTRA_CONFIG[stm32mp157f-dk2] += "stm32mp157f-dk2-m4-exam
 UBOOT_EXTLINUX_TARGETS_EXTRA_CONFIG[stm32mp157f-ev1] += "stm32mp157f-ev1-m4-examples"
 
 UBOOT_EXTLINUX_TARGETS_EXTRA_CONFIG[stm32mp135f-dk] += "stm32mp135f-dk-a7-examples"
+UBOOT_EXTLINUX_TARGETS_EXTRA_CONFIG[stm32mp15xxaa-onekiwi-r1] += "stm32mp15xxaa-onekiwi-r1-a7-examples"
 
 # -----------------------------------------------------------------------------
 # Configure A7 examples labels
@@ -95,6 +98,7 @@ UBOOT_EXTLINUX_FDT:stm32mp157f-dk2-a7-examples = "/stm32mp157f-dk2-a7-examples.d
 UBOOT_EXTLINUX_FDT:stm32mp157f-ev1-a7-examples = "/stm32mp157f-ev1-a7-examples.dtb"
 
 UBOOT_EXTLINUX_FDT:stm32mp135f-dk-a7-examples = "/stm32mp135f-dk-a7-examples.dtb"
+UBOOT_EXTLINUX_FDT:stm32mp15xxaa-onekiwi-r1-examples = "/stm32mp15xxaa-onekiwi-r1-examples.dtb"
 
 # -----------------------------------------------------------------------------
 # Configure M4 examples labels
@@ -104,3 +108,4 @@ UBOOT_EXTLINUX_FDT:stm32mp157c-dk2-m4-examples = "/stm32mp157c-dk2-m4-examples.d
 UBOOT_EXTLINUX_FDT:stm32mp157c-ev1-m4-examples = "/stm32mp157c-ev1-m4-examples.dtb"
 UBOOT_EXTLINUX_FDT:stm32mp157f-dk2-m4-examples = "/stm32mp157f-dk2-m4-examples.dtb"
 UBOOT_EXTLINUX_FDT:stm32mp157f-ev1-m4-examples = "/stm32mp157f-ev1-m4-examples.dtb"
+UBOOT_EXTLINUX_FDT:stm32mp15xxaa-onekiwi-r1-m4-examples = "/stm32mp15xxaa-onekiwi-r1-m4-examples.dtb"

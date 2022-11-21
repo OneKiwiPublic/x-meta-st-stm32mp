@@ -72,10 +72,12 @@ MACHINE_EXTRA_RRECOMMENDS = " kernel-modules kernel-imagebootfs"
 STM32MP_DT_FILES_DK ??= ""
 STM32MP_DT_FILES_ED ??= ""
 STM32MP_DT_FILES_EV ??= ""
+STM32MP_DT_FILES_MP15XXAA ??= ""
 # Set default supported device tree list
 STM32MP_DEVICETREE:append = " ${STM32MP_DT_FILES_DK} "
 STM32MP_DEVICETREE:append = " ${STM32MP_DT_FILES_ED} "
 STM32MP_DEVICETREE:append = " ${STM32MP_DT_FILES_EV} "
+STM32MP_DEVICETREE:append = " ${STM32MP_DT_FILES_MP15XXAA} "
 
 # =========================================================================
 # Machine specific packages

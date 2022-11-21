@@ -57,4 +57,4 @@ SRCREV:class-devupstream = "c9cad45257b92f03e08ba3da5a2ce29629f80e4e"
 STM32MP_SOURCE_SELECTION ?= "tarball"
 
 #DEFAULT_PREFERENCE = "${@bb.utils.contains('STM32MP_SOURCE_SELECTION', 'github', '-1', '1', d)}"
-DEFAULT_PREFERENCE = "${@bb.utils.contains('STM32MP_SOURCE_SELECTION', 'github', '-1', '1', d)}"
+DEFAULT_PREFERENCE = "${@bb.utils.contains('STM32MP_SOURCE_SELECTION', 'tarball', '-1', '1', d)}"
