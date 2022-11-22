@@ -2,3 +2,5 @@ SUMMARY = "OneKiwi OpenSTLinux weston image with basic Wayland support (if enabl
 LICENSE = "Proprietary"
 
 include recipes-st/images/st-image-weston.bb
+
+MAGE_INSTALL += " console-splash"
